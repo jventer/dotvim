@@ -69,6 +69,8 @@ elseif strpart(system("uname"),0,6) == "Darwin"
     let platform="darwin"
     set grepprg=grep\ -nH\ $*
     set gfn=Anonymous\ Pro:h14
+    set transparency=10
+
 "-------------------------------
 "Determine whether on Windows/?
 "-------------------------------
