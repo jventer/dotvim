@@ -17,6 +17,7 @@ set tabstop=4                   "Set tab to 4 space characters long
 set expandtab                   "Set tab to whitespaces
 set shiftwidth=4                "Set width to be used for indents
 set smarttab                    "Smartly backspaces tab equivalent spaces
+set softtabstop=4               "Feels as if tabs are used with <BS>
 filetype plugin indent on       "Indents and plugin loading depend on filetype
 
 "-------------------------------
