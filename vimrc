@@ -25,7 +25,8 @@ filetype plugin indent on       "Indents and plugin loading depend on filetype
 "-------------------------------
 set number                      "Enables line numbers
 syntax on                       "Enables syntax highlighting according to ft
-"set colorcolumn=80              "Shows a vertical line after column 80
+"set colorcolumn=80             "Shows a vertical line after column 80
+set hls	                        "Sets highlighting for text searches etc
 
 "-------------------------------
 "TEXT NAVIGATION
