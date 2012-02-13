@@ -7,6 +7,10 @@ Create symlinks:
     ln -s ~/.vim/vimrc ~/.vimrc
     ln -s ~/.vim/gvimrc ~/.gvimrc
 
+Git submodule add instructions
+
+    git submodule add https//<giturl> bundle/<localname>
+
 Init and update submodules used for managing plugins
 
     git submodule init
