@@ -40,7 +40,7 @@ if has("autocmd")               "Tests if vim system can do autocommands
         \&& line("'\"") <= line("$")
         \| exe "normal g'\"" | 
     \endif
-    au FileType latex           "Tests for latex ft, sets indent on syntax
+    au FileType tex             "Tests for latex ft, sets indent on syntax
         \set foldmethod=syntax  
 endif                           
 
