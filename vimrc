@@ -51,7 +51,7 @@ endif
 setlocal spell spelllang=en_gb  "Set spell checker and default language
 au! BufRead,BufNewFile *.f90 
     \let b:fortran_do_enddo=1
-
+let g:tex_flavor='latex'
 
 "------------------------------------------------------------------------------
 "### PLATFORM SPECIFIC SETTINGS ###
