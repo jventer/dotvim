@@ -64,6 +64,17 @@ if strpart(system("uname"),0,5) == "Linux"
     let platform="linux"        "Sets variable to remember platform
     set grepprg=grep\ -nH\ $*   "Sets the grep program
 
+    "*** Color schemes in terminal vim ***
+    "First let csapprox know if we are working with konsole
+    if (&term == 'xterm' || &term =~? '^screen') && hostname() == 'debussy'
+    " On my machine, I use Konsole with 256 color support
+        set t_Co=256
+        let g:CSApprox_konsole = 1
+        colorscheme BlackForrest
+     endif
+
+
+
 "-------------------------------
 "Determine whether on Mac OS X
 "-------------------------------
