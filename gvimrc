@@ -7,7 +7,8 @@
 "-------------------------------
 if strpart(system("uname"),0,5) == "Linux"
     let platform="linux"            "Sets variable to remember platform
-    set gfn=peep                    "peep font, nice clean, no smooting
+"    set gfn=peep                    "peep font, nice clean, no smooting
+    set gfn=DejaVu\ Sans\ Mono\ 9
     set guioptions-=T               "Removes toolbar
     set guioptions-=m               "Removes menu
 
