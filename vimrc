@@ -66,7 +66,7 @@ if strpart(system("uname"),0,5) == "Linux"
 
     "*** Color schemes in terminal vim ***
     "First let csapprox know if we are working with konsole
-    if (&term == 'xterm' || &term =~? '^screen') && hostname() == 'debussy'
+    if (&term == 'xterm' || &term =~? '^screen') && (hostname() == 'debussy' || hostname() == 'FastVenter')
     " On my machine, I use Konsole with 256 color support
         set t_Co=256
         let g:CSApprox_konsole = 1
