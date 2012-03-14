@@ -9,7 +9,7 @@ if strpart(system("uname"),0,5) == "Linux"
     let platform="linux"            "Sets variable to remember platform
     set gfn=peep                    "peep font, nice clean, no smooting
     set guioptions-=T               "Removes toolbar
-    set guioptions-=M               "Removes menu
+    set guioptions-=m               "Removes menu
 
 "-------------------------------
 "Determine whether on Mac OS X
