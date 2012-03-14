@@ -63,6 +63,7 @@ let g:tex_flavor='latex'
 if strpart(system("uname"),0,5) == "Linux"
     let platform="linux"        "Sets variable to remember platform
     set grepprg=grep\ -nH\ $*   "Sets the grep program
+
 "-------------------------------
 "Determine whether on Mac OS X
 "-------------------------------
