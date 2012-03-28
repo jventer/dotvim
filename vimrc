@@ -12,11 +12,11 @@ call pathogen#infect()
 "-------------------------------
 "TAB BEHAVIOUR
 "-------------------------------
-set smartindent                 "Sets smart indents for different languages
-set tabstop=4                   "Set tab to 4 space characters long 
 set expandtab                   "Set tab to whitespaces
+set smartindent                 "Sets smart indents for different languages
+"set tabstop=4                   "Set tab to 4 space characters long 
 set shiftwidth=4                "Set width to be used for indents
-set smarttab                    "Smartly backspaces tab equivalent spaces
+"set smarttab                    "Smartly backspaces tab equivalent spaces
 set softtabstop=4               "Feels as if tabs are used with <BS>
 filetype plugin indent on       "Indents and plugin loading depend on filetype
 
@@ -31,7 +31,9 @@ set hls	                        "Sets highlighting for text searches etc
 "-------------------------------
 "TEXT NAVIGATION
 "-------------------------------
-set bs=2                        "Backspace can delete word with Ctrl+bs
+set bs=2                        "Sets backspace behaviour
+imap <C-BS> <C-W>
+                                "Backspace can delete word with Ctrl+bs
 set foldmethod=indent           "Fold on indents for normal programming
 set mouse=a                     "Sets mouse for use in terminals
 if has("autocmd")               "Tests if vim system can do autocommands 
@@ -40,8 +42,6 @@ if has("autocmd")               "Tests if vim system can do autocommands
         \&& line("'\"") <= line("$")
         \| exe "normal g'\"" | 
     \endif
-    au FileType tex             "Tests for latex ft, sets indent on syntax
-        \set foldmethod=syntax  
 endif                           
 
 
