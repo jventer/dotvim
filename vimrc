@@ -86,6 +86,6 @@ elseif strpart(system("uname"),0,6) == "Darwin"
 "Determine whether on Windows/?
 "-------------------------------
 else
-    let platform="Windows/Other"
+    let platform="windows"
 endif
 
