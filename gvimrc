@@ -19,6 +19,9 @@ elseif strpart(system("uname"),0,6) == "Darwin"
     let platform="darwin"
     set gfn=Anonymous\ Pro:h14
     set transparency=10
+else
+    let platform="windows"
+    set gfn=peep:h11:cOEM
 endif
 
 "------------------------------------------------------------------------------
