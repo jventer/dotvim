@@ -74,6 +74,9 @@ if strpart(system("uname"),0,5) == "Linux"
     endif
     let g:Tex_MultipleCompileFormats="pdf,dvi"
     let g:Tex_DefaultTargetFormat = "pdf"
+    let g:Tex_ViewRule_pdf = "okular"
+    let g:Tex_ViewRule_dvi = "okular"
+    let g:Tex_ViewRule_ps = "okular"
 
 
 "-------------------------------
