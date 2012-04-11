@@ -71,8 +71,9 @@ if strpart(system("uname"),0,5) == "Linux"
         set t_Co=256
         let g:CSApprox_konsole = 1
         colorscheme BlackForrest
-     endif
-
+    endif
+    let g:Tex_MultipleCompileFormats="pdf,dvi"
+    let g:Tex_DefaultTargetFormat = "pdf"
 
 
 "-------------------------------
@@ -87,7 +88,7 @@ elseif strpart(system("uname"),0,6) == "Darwin"
 "-------------------------------
 else
     let platform="windows"
-    let g:Tex_MultipleCompileFormats="pdf"
+    let g:Tex_MultipleCompileFormats="pdf,dvi"
     let g:Tex_DefaultTargetFormat = "pdf"
     let g:Tex_ViewRule_pdf = "C:\\Program\ Files\ \(x86\)\\Adobe\\Acrobat\ 9\.0\\Acrobat\\Acrobat.exe"
 endif
