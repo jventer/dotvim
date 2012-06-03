@@ -66,7 +66,7 @@ if strpart(system("uname"),0,5) == "Linux"
 
     "*** Color schemes in terminal vim ***
     "First let csapprox know if we are working with konsole
-    if (&term == 'xterm' || &term =~? '^screen') && (hostname() == 'debussy' || hostname() == 'FastVenter')
+    if (&term == 'xterm' || &term =~? '^screen') && (hostname() == 'debussy' || hostname() == 'ravel')
     " On my machine, I use Konsole with 256 color support
         set t_Co=256
         let g:CSApprox_konsole = 1
@@ -91,10 +91,10 @@ let g:Tex_CompileRule_dvi = 'latex --interaction=nonstopmode $*'
 let g:Tex_CompileRule_ps = 'dvips -Pwww -o $*.ps $*.dvi'
 let g:Tex_CompileRule_pspdf = 'ps2pdf $*.ps'
 let g:Tex_CompileRule_dvipdf = 'dvipdfm $*.dvi'
-let g:Tex_CompileRule_pdf = 'pdflatex -synctex=1 --interaction=nonstopmode $*'
+let g:Tex_CompileRule_pdf = 'pdflatex -synctex=1 --interaction=batchmode $*'
   
 " let g:Tex_ViewRule_dvi = 'texniscope'
-" let g:Tex_ViewRule_ps = 'Preview'
+et g:Tex_ViewRule_ps = 'Preview'
 let g:Tex_ViewRule_pdf = 'Skim'
 "  
 " let g:Tex_FormatDependency_ps  = 'dvi,ps'
