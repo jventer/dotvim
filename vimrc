@@ -36,14 +36,17 @@ imap <C-BS> <C-W>
                                 "Backspace can delete word with Ctrl+bs
 set foldmethod=indent           "Fold on indents for normal programming
 set mouse=a                     "Sets mouse for use in terminals
-if has("autocmd")               "Tests if vim system can do autocommands 
-    au BufReadPost *            "Jumps to last marked position in file 
-        \if line("'\"") > 0 
-        \&& line("'\"") <= line("$")
-        \| exe "normal g'\"" | 
-    \endif
-endif                           
+function! ResCur()              "Jumps to last marked position in file 
+  if line("'\"") <= line("$")   "Tip from:
+    normal! g`"                 
+    return 1                    " http://vim.wikia.com/wiki/
+  endif                           " Restore_cursor_to_file_position_in_previous_editing_session
+endfunction
 
+augroup resCur
+  autocmd!
+  autocmd BufWinEnter * call ResCur()
+augroup END
 
 "-------------------------------
 "CONTENT CHECKING
