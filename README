@@ -15,3 +15,7 @@ Init and update submodules used for managing plugins
 
     git submodule init
     git submodule update
+
+To enable push back to server
+    git remote set-url origin git@github.com:jventer/dotvim.git
+
