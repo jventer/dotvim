@@ -9,7 +9,8 @@ if strpart(system("uname"),0,5) == "Linux"
     let platform="linux"            "Sets variable to remember platform
 "    set gfn=peep                    "peep font, nice clean, no smooting
     if (hostname() == 'ravel')
-        set gfn=peep\ 12
+"        set gfn=peep\ 12
+        set gfn=Consolas\ 12
     elseif (hostname() == 'debussy')
         set gfn=Inconsolata\ 13
     else
@@ -23,8 +24,8 @@ if strpart(system("uname"),0,5) == "Linux"
 "-------------------------------
 elseif strpart(system("uname"),0,6) == "Darwin"
     let platform="darwin"
-    set gfn=Anonymous\ Pro:h14
-    set transparency=10
+    set gfn=Inconsolata:h17
+    set transparency=5
 else
     let platform="windows"
     set gfn=peep:h11:cOEM

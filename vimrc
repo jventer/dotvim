@@ -98,7 +98,7 @@ let g:Tex_CompileRule_pdf = 'pdflatex -synctex=1 --interaction=batchmode $*'
   
 " let g:Tex_ViewRule_dvi = 'texniscope'
 let g:Tex_ViewRule_ps = 'Preview'
-let g:Tex_ViewRule_pdf = 'open -a Skim'
+let g:Tex_ViewRule_pdf = 'open -a Preview'
 "  
 " let g:Tex_FormatDependency_ps  = 'dvi,ps'
 " let g:Tex_FormatDependency_pspdf = 'dvi,ps,pspdf'
