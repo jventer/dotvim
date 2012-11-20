@@ -28,3 +28,6 @@
 [submodule "bundle/timestamp"]
 	path = bundle/timestamp
 	url = https://github.com/vim-scripts/timestamp.vim.git
+[submodule "molokai"]
+	path = molokai
+	url = https://github.com/tomasr/molokai.git
