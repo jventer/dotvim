@@ -11,7 +11,7 @@ if strpart(system("uname"),0,5) == "Linux"
     if (hostname() == 'ravel')
         set gfn=peep\ 12
     elseif (hostname() == 'debussy')
-        set gfn=Inconsolata\ Medium\ 13
+        set gfn=Inconsolata\ 13
     else
         set gfn=DejaVu\ Sans\ Mono\ 9
     endif
