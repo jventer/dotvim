@@ -12,7 +12,7 @@ if strpart(system("uname"),0,5) == "Linux"
 "        set gfn=peep\ 12
         set gfn=Consolas\ 12
     elseif (hostname() == 'debussy')
-        set gfn=Inconsolata\ 13
+        set gfn=Droid\ Sans\ Mono\ 9
     else
         set gfn=DejaVu\ Sans\ Mono\ 9
     endif
@@ -34,7 +34,7 @@ endif
 "------------------------------------------------------------------------------
 "### PLATFORM INDEPENDENT SETTINGS ###
 "------------------------------------------------------------------------------
-colorscheme BlackForrest        "Sets colour scheme
+colorscheme molokai2            "Sets colour scheme
 winpos 0 0                      "Places window position at 0,0
 set columns=130                 "This is a reasonable width
 set lines=50	                "This should be a reasonable height
