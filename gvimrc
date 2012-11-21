@@ -24,7 +24,7 @@ if strpart(system("uname"),0,5) == "Linux"
 "-------------------------------
 elseif strpart(system("uname"),0,6) == "Darwin"
     let platform="darwin"
-    set gfn=Droid\ Sans\ Mono:h17
+    set gfn=Droid\ Sans\ Mono:h15
     set transparency=0
 else
     let platform="windows"
