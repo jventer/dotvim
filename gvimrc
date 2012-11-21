@@ -25,7 +25,7 @@ if strpart(system("uname"),0,5) == "Linux"
 elseif strpart(system("uname"),0,6) == "Darwin"
     let platform="darwin"
     set gfn=Inconsolata:h17
-    set transparency=5
+    set transparency=0
 else
     let platform="windows"
     set gfn=peep:h11:cOEM
