@@ -28,3 +28,6 @@
 [submodule "bundle/timestamp"]
 	path = bundle/timestamp
 	url = https://github.com/vim-scripts/timestamp.vim.git
+[submodule "bundle/hilinktrace"]
+	path = bundle/hilinktrace
+	url = https://github.com/gerw/vim-HiLinkTrace.git
