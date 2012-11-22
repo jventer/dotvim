@@ -36,5 +36,5 @@ endif
 "------------------------------------------------------------------------------
 colorscheme molokai2            "Sets colour scheme
 winpos 0 0                      "Places window position at 0,0
-set columns=130                 "This is a reasonable width
+set columns=140                 "This is a reasonable width
 set lines=50	                "This should be a reasonable height
