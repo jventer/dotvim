@@ -93,14 +93,4 @@ highlight Type guifg=#66D9EF gui=NONE
 highlight Typedef guifg=#66D9EF gui=NONE
 highlight Underlined guifg=#808080 gui=underline
 
-
-"ColorScheme metadata{{{
-if v:version >= 700
-	let g:Grey Jannes_Metadata = {
-				\"Palette" : "black:white:gray50:red:purple:blue:light blue:green:yellow:orange:lavender:brown:goldenrod4:dodger blue:pink:light green:gray10:gray30:gray75:gray90",
-				\"Last Change" : "2012 Nov 22",
-				\"Name" : "Grey Jannes",
-				\}
-endif
-"}}}
-" vim:set foldmethod=marker expandtab filetype=vim:
+let g:colors_name="Jannes Grey"
