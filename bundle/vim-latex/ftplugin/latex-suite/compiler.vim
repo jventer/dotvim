@@ -323,7 +323,7 @@ endfunction
 "      will work.
 function! Tex_ForwardSearchLaTeX()
 	if &ft != 'tex'
-		echo "calling Tex_ForwardSeachLaTeX from a non-tex file"
+		echo "calling Tex_ForwardSearchLaTeX from a non-tex file"
 		return
 	end
 
@@ -348,10 +348,10 @@ function! Tex_ForwardSearchLaTeX()
 		let execString = 'silent! !start '. viewer.' -s '.line('.').expand('%').' '.mainfnameRoot
 
 
-	elseif (has('macunix') && (viewer =~ "^ *\(Skim\|PDFView\|TeXniscope\)\( \|$\)"))
+	elseif (has('macunix') && (viewer == "Skim" || viewer == "PDFView" || viewer == "TeXniscope"))
 		" We're on a Mac using a traditional Mac viewer
 
-		if viewer =~ "^ *Skim"
+		if viewer == "Skim"
 
 				let execString = 'silent! !/Applications/Skim.app/Contents/SharedSupport/displayline '.
 					\ line('.').' "'.mainfnameFull.'.'.s:target.'" "'.expand("%:p").'"'
