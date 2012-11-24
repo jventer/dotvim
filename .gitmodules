@@ -31,3 +31,6 @@
 [submodule "bundle/hilinktrace"]
 	path = bundle/hilinktrace
 	url = https://github.com/gerw/vim-HiLinkTrace.git
+[submodule "bundle/decho"]
+	path = bundle/decho
+	url = https://github.com/vim-scripts/Decho.git
