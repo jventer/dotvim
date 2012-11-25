@@ -65,6 +65,9 @@ function! <SID>SynStack()
   echo map(synstack(line('.'), col('.')), 'synIDattr(v:val, "name")')
 endfunc
 
+"Setting 24H timestamping mode for files which makes use of the plugin
+let g:timestamp_rep = '%a %d %b %Y %H:%M:%S %Z'
+
 "------------------------------------------------------------------------------
 "### PLATFORM SPECIFIC SETTINGS ###
 "------------------------------------------------------------------------------
