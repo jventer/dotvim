@@ -51,7 +51,7 @@ highlight SignColumn guifg=#A6E22E guibg=#232526 gui=NONE
 highlight SpecialKey guifg=#465457 gui=italic
 highlight StatusLine guifg=#455354 guibg=fg gui=bold,reverse
 highlight StatusLineNC guifg=#808080 guibg=#080808 gui=reverse
-highlight Title guifg=#ef5939 gui=bold
+highlight Title guifg=#ef5939 gui=NONE
 highlight VertSplit guifg=#7C7C7C guibg=#414143 gui=bold
 highlight Visual guibg=#403D3D gui=NONE
 highlight VisualNOS guibg=#403D3D gui=bold,underline
