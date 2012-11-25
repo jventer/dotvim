@@ -84,8 +84,10 @@ if strpart(system("uname"),0,5) == "Linux"
         let g:CSApprox_konsole = 1
         colorscheme BlackForrest
     endif
-    let g:Tex_MultipleCompileFormats="pdf,dvi"
+    let g:Tex_MultipleCompileFormats="pdf"
     let g:Tex_DefaultTargetFormat = "pdf"
+    let g:Tex_CompileRule_pdf = "latexmk -pdflatex='pdflatex -file-line-error -synctex=1 --interaction=batchmode' -pdf $*"
+     " 'pdflatex -synctex=1 --interaction=batchmode $*'
     let g:Tex_ViewRule_pdf = "okular"
     let g:Tex_ViewRule_dvi = "okular"
     let g:Tex_ViewRule_ps = "okular"
