@@ -34,7 +34,7 @@ endif
 "------------------------------------------------------------------------------
 "### PLATFORM INDEPENDENT SETTINGS ###
 "------------------------------------------------------------------------------
-colorscheme molokai2            "Sets colour scheme
+colorscheme jannesgrey          "Sets colour scheme
 winpos 0 0                      "Places window position at 0,0
-set columns=140                 "This is a reasonable width
+set columns=160                 "This is a reasonable width
 set lines=50	                "This should be a reasonable height
