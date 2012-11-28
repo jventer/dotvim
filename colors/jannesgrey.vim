@@ -1,7 +1,7 @@
 " Colorscheme created with ColorSchemeEditor v1.2.3
-"Name: Grey Jannes
+"Name: Jannes Grey
 "Maintainer: 
-"Last Change: 2012 Nov 22
+"Last Change: 2012 Nov 28
 set background=dark
 if version > 580
 	highlight clear
@@ -9,7 +9,7 @@ if version > 580
 		syntax reset
 	endif
 endif
-let g:colors_name = "Grey Jannes"
+let g:colors_name = "Jannes Grey"
 
 if v:version >= 700
 	highlight CursorColumn guibg=#293739 gui=NONE
@@ -29,7 +29,7 @@ if v:version >= 700
 	endif
 endif
 highlight Cursor guifg=#000000 guibg=#F8F8F0 gui=NONE
-highlight link CursorIM cleared
+highlight CursorIM gui=NONE
 highlight DiffAdd guibg=#13354A gui=NONE
 highlight DiffChange guifg=#89807D guibg=#4C4745 gui=NONE
 highlight DiffDelete guifg=#960050 guibg=#1E0010 gui=bold
@@ -53,7 +53,7 @@ highlight StatusLine guifg=#455354 guibg=fg gui=bold,reverse
 highlight StatusLineNC guifg=#808080 guibg=#080808 gui=reverse
 highlight Title guifg=#ef5939 gui=NONE
 highlight VertSplit guifg=#7C7C7C guibg=#414143 gui=bold
-highlight Visual guibg=#403D3D gui=NONE
+highlight Visual guibg=#634C81 gui=NONE
 highlight VisualNOS guibg=#403D3D gui=bold,underline
 highlight WarningMsg guifg=#FFFFFF guibg=#333333 gui=bold
 highlight WildMenu guifg=#66D9EF guibg=#000000 gui=NONE
@@ -93,4 +93,5 @@ highlight Type guifg=#66D9EF gui=NONE
 highlight Typedef guifg=#66D9EF gui=NONE
 highlight Underlined guifg=#808080 gui=underline
 
-let g:colors_name="Jannes Grey"
+
+"" vim:set foldmethod=marker expandtab filetype=vim:
