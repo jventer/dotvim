@@ -10,7 +10,8 @@ if strpart(system("uname"),0,5) == "Linux"
 "    set gfn=peep                    "peep font, nice clean, no smooting
     if (hostname() == 'ravel')
 "        set gfn=peep\ 12
-        set gfn=Consolas\ 12
+"        set gfn=Consolas\ 12
+        set gfn=Droid\ Sans\ Mono\ 10
     elseif (hostname() == 'debussy')
         set gfn=Droid\ Sans\ Mono\ 9
     else
