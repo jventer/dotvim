@@ -103,6 +103,7 @@ elseif strpart(system("uname"),0,6) == "Darwin"
     let platform="darwin"
     set grepprg=grep\ -nH\ $*
 let g:Tex_DefaultTargetFormat = 'pdf'
+let g:Tex_MultipleCompileFormats='pdf'
 let g:Tex_TreatMacViewerAsUNIX = 0
 let g:Tex_CompileRule_dvi = 'latex --interaction=nonstopmode $*'
 let g:Tex_CompileRule_ps = 'dvips -Pwww -o $*.ps $*.dvi'
